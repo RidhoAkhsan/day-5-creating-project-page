@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Blog Page Task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="left-side">
+        <img src="assets/logo.png" alt="logo" />
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="project.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- Form Contact -->
+    <div class="text-form">
+      <h1>Get In Touch</h1>
+    </div>
+    <form class="form-contact" action="">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" />
+      </div>
+      <div>
+        <label for="subject">Subject</label>
+        <select name="subject" id="subject">
+          <option value="Privacy Policy">Privacy Policy</option>
+          <option value="Problem With Our Site">Problem With Our Site</option>
+          <option value="Question on Order">Question on Order</option>
+          <option value="Other Question">Other Question</option>
+        </select>
+      </div>
+      <div>
+        <label for="text-area">Your Message</label>
+        <textarea
+          name="text-area"
+          id="text-area"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <button>submit</button>
+    </form>
+  </body>
+</html>

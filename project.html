@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Creating Blog Page Task</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="left-side">
+        <img src="assets/logo.png" alt="logo" />
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="list-active" href="project.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- Blog Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="blog-container">
+          <h1>Add My Project</h1>
+          <form action="">
+            <div>
+              <label for="input-project-name">Project Name</label>
+              <input type="input-project-name" />
+            </div>
+            <div class="input-date">
+              <div>
+                <label for="input-start-date">Start Date</label>
+                <input type="input-start-date" />
+              </div>
+              <div>
+                <label for="input-end-date">End Date</label>
+                <input type="input-end-date" />
+              </div>
+            </div>
+            <div>
+              <label for="input-description">Description</label>
+              <textarea
+                name="input-description"
+                id="input-description"
+              ></textarea>
+            </div>
+            <div class="checkbox-group">
+              <label>Technologies</label>
+              <div class="checkbox-group-left">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="option1"
+                    name="option1"
+                    value="Node JS"
+                  />
+                  <label for="option1">Node JS</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="option2"
+                    name="option2"
+                    value="React JS"
+                  />
+                  <label for="option2">React JS</label>
+                </div>
+              </div>
+              <div class="checkbox-group-right">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="option3"
+                    name="option3"
+                    value="Next JS"
+                  />
+                  <label for="option3">Next JS</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="option4"
+                    name="option4"
+                    value="TypeScript"
+                  />
+                  <label for="option4">TypeScript</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label>Upload Image</label>
+              <div class="upload-image">
+                <div class="choose-file-group">
+                  <label for="choose-file">
+                    <p>Choose File</p>
+                  </label>
+                  <input type="input" id="choose-file" hidden />
+                </div>
+                <img src="assets/file.png" alt="file" />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog List -->
+    <div class="blog-list">
+      <h1>My Project</h1>
+      <div class="blog-list-card">
+        <a href="project-detail.html">
+          <img src="assets/images/sample_images.png" alt="sample images" />
+        </a>
+        <div class="blog-list-card-content">
+          <div class="blog-list-card-top">
+            <a href="project-detail.html">Dumbways Mobile App - 2021</a>
+            <p>durasi: 3 bulan</p>
+          </div>
+          <div class="blog-list-card-middle">
+            <p>
+              App that used for dumbways student, it was deployed and can
+              download on playstore. Happy Download
+            </p>
+          </div>
+          <div class="blog-list-card-bottom">
+            <img src="assets/playstore_ico.png" alt="playstore" />
+            <img src="assets/android_ico.png" alt="android" />
+            <img src="assets/java_ico.png" alt="java programming language" />
+          </div>
+          <div class="blog-list-card-button">
+            <button>edit</button>
+            <button>delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
